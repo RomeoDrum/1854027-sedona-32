@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:  url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-style: normal;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-index {
+  background-image: url("img/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.five-advantages h2{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.five-advantages{
+  font-size: 22px;
+  text-align: center;
+}
+
+.advantages-list li {
+  text-align: center;
+}
+
+.advantages-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.real-town {
+  color:#ffffff;
+  background-color: #83B3D3;
+}
+
+.housing {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.souvenirs {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.devils-bridge {
+  color:#ffffff;
+  background-color: #83B3D3;
+}
+
+.places {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.way {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.few-tourists {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.search-hotel {
+  text-align: center;
+}
+
+.search-hotel h3 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-hotel p {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.search-hotel .button {
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color:#ffffff;
+  background-color: #756257;
+  text-decoration: none;
+}
+
+.mailing {
+  background-image: url(img/background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #83B3D3;
+  color: #ffffff;
+  text-align: center;
+}
+
+.mailing h3 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.mailing h3 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.newsletter-button {
+  font-size: 20px;
+  line-height: 26px;
+  background-color: #83B3D3;
+  color: #ffffff;
+  text-transform: uppercase;
+}
