@@ -20,6 +20,7 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+  font-weight: 400;
 }
 
 .navigation-link {
@@ -31,22 +32,18 @@ body {
   text-decoration: none;
 }
 
-.main-index {
-  background-image: url("img/index-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+.first-screen{
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  background: #e1f5f7 url("img/index-background.jpg") no-repeat 100% 100% ;
 }
 
-.five-advantages h2{
+.first-screen h2{
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
-}
-
-.five-advantages{
-  font-size: 22px;
   text-align: center;
 }
 
@@ -58,6 +55,7 @@ body {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 28px;
+  font-weight: 700;
 }
 
 .real-town {
@@ -98,6 +96,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .search-hotel p {
@@ -112,6 +111,7 @@ body {
   color:#ffffff;
   background-color: #756257;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .mailing {
@@ -127,11 +127,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-}
-
-.mailing h3 {
-  font-size: 22px;
-  line-height: 26px;
+  font-weight: 700;
 }
 
 .newsletter-button {
@@ -140,7 +136,10 @@ body {
   background-color: #83B3D3;
   color: #ffffff;
   text-transform: uppercase;
+  font-weight: 700;
 }
+
+    /* Далее стили для страницы каталога */
 
 .filter {
   background-image: url(img\catalog-background.jpg);
@@ -201,14 +200,51 @@ body {
   font-size: 24px;
   line-height: 31px;
   color: black;
+  font-weight: 700;
 }
 
 .product-card-link p{
   color: #000000;
  }
 
-.product-card-button {
+.button-detail {
   color: #ffffff;
   background-color: #756257;
   text-decoration: none;
+}
+
+.button-favourites {
+ background-color: #83B3D3;
+}
+ .product-card p {
+  font-size: 18px;
+  line-height: 23px;
+ }
+
+.rating {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.product-show {
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #83B3D3;
+}
+
+.pagination-item {
+  background-color: #83B3D3;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hotels-page {
+  font-size: 18px;
+  line-height: 23px;
 }
