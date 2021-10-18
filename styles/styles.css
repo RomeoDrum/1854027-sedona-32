@@ -14,13 +14,37 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
   font-weight: 400;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  display: flex;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.logo {
+  margin: 0 auto;
 }
 
 .navigation-link {
@@ -32,11 +56,29 @@ body {
   text-decoration: none;
 }
 
+.navigation-user {
+
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .first-screen{
   font-size: 22px;
   line-height: 36px;
   text-align: center;
   background: #e1f5f7 url("img/index-background.jpg") no-repeat 100% 100% ;
+}
+
+.welcome {
+  display: block;
+  margin: 0 auto;
 }
 
 .first-screen h2{
@@ -45,6 +87,13 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-list li {
@@ -58,9 +107,17 @@ body {
   font-weight: 700;
 }
 
+.advantage-block {
+  width: 400px;
+}
+
 .real-town {
   color:#ffffff;
   background-color: #83B3D3;
+}
+
+.advantages-photo {
+  width: 800px;
 }
 
 .housing {
@@ -139,6 +196,17 @@ body {
   font-weight: 700;
 }
 
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
     /* Далее стили для страницы каталога */
 
 .filter {
@@ -154,9 +222,14 @@ body {
   line-height: 78px;
 }
 
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
+}
+
+.catalog-filter {
+  display: flex;
 }
 
 .catalog-filter-title {
@@ -181,6 +254,10 @@ body {
   line-height: 23px;
 }
 
+.sort {
+  display: flex;
+}
+
 .result-search {
   text-transform: uppercase;
   font-size: 30px;
@@ -190,11 +267,26 @@ body {
 .select-control {
   font-size: 18px;
   line-height: 23px;
+  width: 290px;
+
+}
+
+.range-toggle {
+  width: 290px;
+}
+
+.product-card {
+  display: flex;
+}
+
+.product-card-button {
+  width: 160px;
 }
 
 .product-card-link {
   text-decoration: none;
- }
+  display: flex;
+}
 
 .product-card-title {
   font-size: 24px;
@@ -205,7 +297,7 @@ body {
 
 .product-card-link p{
   color: #000000;
- }
+}
 
 .button-detail {
   color: #ffffff;
@@ -216,27 +308,49 @@ body {
 .button-favourites {
  background-color: #83B3D3;
 }
- .product-card p {
+
+.product-card p {
   font-size: 18px;
   line-height: 23px;
- }
+}
 
 .rating {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
+  width: 160px;
+  height: 37px;
+  background-color: #F2F2F2;
+  margin-right: 70px;
 }
 
 .product-show {
+  margin: 0 auto;
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
-  text-align: center;
   background-color: #83B3D3;
+  width: 625px;
+  height: 55px;
+}
+
+.sort-visual {
+  display: flex;
+  justify-content: space-between;
+}
+
+.visual-control {
+  width: 160px;
+  height: 50px;
+}
+
+.pagination {
+  display: flex;
 }
 
 .pagination-item {
   background-color: #83B3D3;
+
 }
 
 .pagination-link {
