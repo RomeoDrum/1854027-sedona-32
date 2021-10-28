@@ -39,7 +39,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container main-inner">
+    <main class="main-container">
       <div class="page-container">
         <section class="filter">
           <h1 class="filter-title">Гостиницы Седоны</h1>
@@ -57,7 +57,7 @@
             </li>
           </ul>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group infrastructure">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -80,7 +80,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group type-housing">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -103,7 +103,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group cost">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <button class="range-toggle toggle-min" type="button">
                 <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -122,35 +122,37 @@
             <button class="button reset" type="submit">Сбросить</button>
           </form>
         </section>
-        <section class="result-hotels">
-          <div class="sort">
-            <h3 class="result-search">Найдено гостиниц: 38</h3>
-            <form class="sorting-type">
-              <label class="visually-hidden" for="sorting">Сортировка</label>
-              <select class="select-control" id="sorting" name="sorting">
-                <option value="cheap">Сначала дешёвые</option>
-                <option value="expensive">Сначала дорогие</option>
-                <option value="popular">Сначала популярные</option>
-              </select>
-              <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-            </form>
-            <div class="visual-mode">
-              <a href="#" class="button card-mode">
-                <img src="img/icon/mode-tile.svg" class="mode-tile" width="16" height="14" alt="Показать карточками">
-              </a>
-              <a href="#" class="button card-mode">
-                <img src="img/icon/mode-slideshow.svg" class="mode-slideshow" width="16" height="14" alt="Показать слайд-шоу">
-              </a>
-              <a href="#" class="button card-mode">
-                <img src="img/icon/mode-list.svg" class="mode-list" width="16" height="14" alt="Показать список">
-              </a>
-            </div>
+        <section class="sort">
+          <h3 class="result-search">Найдено гостиниц: 38</h3>
+          <form class="sorting-type">
+            <label class="visually-hidden" for="sorting">Сортировка</label>
+            <select class="select-sorting" id="sorting" name="sorting">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+          </form>
+          <div class="visual-mode">
+            <a href="#" class="button card-mode">
+              <img src="img/icon/mode-tile.svg" class="mode-tile" width="16" height="14" alt="Показать карточками">
+            </a>
+            <a href="#" class="button card-mode">
+              <img src="img/icon/mode-slideshow.svg" class="mode-slideshow" width="16" height="14" alt="Показать слайд-шоу">
+            </a>
+            <a href="#" class="button card-mode">
+              <img src="img/icon/mode-list.svg" class="mode-list" width="16" height="14" alt="Показать список">
+            </a>
           </div>
+        </section>
+        <section class="catalog">
           <ul class="catalog-list">
             <li>
               <div class="product-card">
-                <a class="product-card-link" href="product.html">
+                <a class="image-link">
                   <img class="product-card-image" src="img/catalog/hotel-1.jpg" width="180" height="120" alt="Amara Resort & Spa">
+                </a>
+                <a class="product-card-link" href="product.html">
                   <h3 class="product-card-title">Amara Resort & Spa</h3>
                   <p>Гостиница</p>
                   <p>От 4000р</p>
@@ -162,8 +164,10 @@
             </li>
             <li>
               <div class="product-card">
-                <a class="product-card-link" href="product.html">
+                <a class="image-link">
                   <img class="product-card-image" src="img/catalog/hotel-2.jpg" width="180" height="120" alt="Desert Quail Inn">
+                </a>
+                <a class="product-card-link" href="product.html">
                   <h3 class="product-card-title">Desert Quail Inn</h3>
                   <p>Мотель</p>
                   <p>От 3000р</p>
@@ -175,8 +179,10 @@
             </li>
             <li>
               <div class="product-card">
-                <a class="product-card-link" href="product.html">
+                <a class="image-link">
                   <img class="product-card-image" src="img/catalog/hotel-3.jpg" width="180" height="120" alt="Villas at Poco Diablo">
+                </a>
+                <a class="product-card-link" href="product.html">
                   <h3 class="product-card-title">Villas at Poco Diablo</h3>
                   <p>Апартаменты</p>
                   <p>От 2000р</p>
@@ -188,8 +194,10 @@
             </li>
             <li>
               <div class="product-card">
-                <a class="product-card-link" href="product.html">
+                <a class="image-link">
                   <img class="product-card-image" src="img/catalog/hotel-4.jpg" width="180" height="120" alt="GreenTree Inn">
+                </a>
+                <a class="product-card-link" href="product.html">
                   <h3 class="product-card-title">GreenTree Inn</h3>
                   <p>Гостиница</p>
                   <p>От 3000р</p>
@@ -201,8 +209,10 @@
             </li>
           </ul>
           <button class="button product-show" type="button">Загрузить ещё</button>
+        </section>
+        <section class="pagination">
           <div class="sort-visual">
-            <ul class="pagination">
+            <ul class="pagination-list">
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
               </li>
