@@ -136,7 +136,7 @@ body {
 
 .advantage-block {
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -547,6 +547,12 @@ body {
   height: 37px;
   border-radius: 4px;
  }
+
+.stars {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  align-items: center;
+}
 
  .rating {
   grid-column: 4/5;
