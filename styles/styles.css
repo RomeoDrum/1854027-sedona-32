@@ -957,6 +957,7 @@ body {
 
 .image-link:focus {
   outline-color: #83B3D3;
+  opacity: 60%;
 }
 
 .product-card-link {
