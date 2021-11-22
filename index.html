@@ -35,11 +35,12 @@
                 <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/>
                 </svg>
-                <span class="selected">12</span>
+                <span class="selected">
+                  <p>12</p>
+                </span>
                 <span class="visually-hidden">Избранное</span>
               </div>
             </a>
-
             <div class="popover popover-cart popover-open">
               <svg class="popover-vector" width="20" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#a)">
@@ -215,17 +216,17 @@
         </section>
         <section class="modal-content">
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="date-in-title modal-fonts">Дата заезда:</label>
+            <label class="date-in-title modal-fonts" for="date-in">Дата заезда:</label>
             <div class="date-in-content date-input">
-              <input class="modal-input modal-fonts" type="text" name="date-in" placeholder="Укажите дату">
+              <input class="modal-input modal-fonts" id="date-in" type="text" name="date-in" placeholder="Укажите дату">
               <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" fill="#000"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" fill="#000"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/>
               </svg>
             </div>
             <p class="in-comment comment">Сообщение об ошибке</p>
-            <label class="date-out-title modal-fonts">Дата выезда:</label>
+            <label class="date-out-title modal-fonts" for="date-out">Дата выезда:</label>
             <div class="date-out-content date-input">
-              <input class="modal-input modal-fonts" type="text" name="date-out" placeholder="Укажите дату">
+              <input class="modal-input modal-fonts" id="date-out" type="text" name="date-out" placeholder="Укажите дату">
               <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" fill="#000"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" fill="#000"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/>
               </svg>
@@ -251,15 +252,16 @@
                 <svg width="1" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g>
                   <defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+                <div class="modal-popover modal-popover-open">
+                  <svg class="modal-vector" width="19" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.5 0 19 9H0l9.5-9Z" fill="#333"/>
+                  </svg>
+                  <span class="modal-popover-content">
+                    <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно</p>
+                  </span>
+                </div>
               </div>
-              <div class="modal-popover modal-popover-open">
-                <svg class="modal-vector" width="19" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.5 0 19 9H0l9.5-9Z" fill="#333"/>
-                </svg>
-                <span class="modal-popover-content">
-                  <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно</p>
-                </span>
-              </div>
+
             </div>
             <div class="button-container button-container-kids">
               <button class="tuning minus" type="button">
