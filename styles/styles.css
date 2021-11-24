@@ -39,7 +39,7 @@ body {
   content: "";
   position: absolute;
   display: block;
-  bottom: -23px;
+  bottom: -19px;
   left: 0;
   right: 0;
   height: 2px;
@@ -74,8 +74,10 @@ body {
 
 .logo {
   position: absolute;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 .navigation-link {
@@ -104,6 +106,8 @@ body {
   list-style-type: none;
   justify-content: center;
   align-items: center;
+  margin-bottom: 14px;
+  margin-top: 14px;
 }
 
 .navigation-user .navigation-link {
@@ -184,11 +188,16 @@ body {
   padding: 0px;
 }
 
+.first-screen-image h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .welcome {
   margin-top: 51px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 
 .divider {
@@ -238,14 +247,21 @@ body {
 }
 
 .advantage-block {
-  width: 400px;
-  min-height: 384px;
+  max-width: 400px;
   text-align: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-right: 45px;
+  padding-bottom: 50px;
+  padding-left: 45px;
+  padding-top: 65px;
+}
+
+.advantage-block p:last-of-type {
+  width: 220px;
 }
 
 .real-town {
@@ -624,7 +640,12 @@ body {
 
 .catalog-filter-group {
   border: 0px;
+  padding-left: 0px;
+  margin-right: 20px;
+}
 
+.catalog-filter-group:nth-child(2) {
+  margin-right: 150px;
 }
 
 .catalog-filter-list {
@@ -708,6 +729,8 @@ body {
   grid-row: 1/-1;
   margin-right: 81px;
   margin: 0px;
+  padding-right: 0px;
+  margin-right: 60px;
 }
 
 .control-label {
@@ -775,7 +798,7 @@ body {
   margin: 0;
 }
 
-.catalog-filter-label:hover {
+.input-price:hover {
   opacity: 0.6;
 }
 
@@ -1314,10 +1337,29 @@ body {
 
 .cart-item {
   display: grid;
-  column-gap: 17px;
-  grid-template-columns: 50px 240px auto;
-  grid-template-rows: 24px 24px;
+  column-gap: 10px;
+  grid-template-columns: 305px auto;
+  grid-template-rows: 50px;
   margin-bottom: 25px;
+}
+
+.cart-item a {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  display: grid;
+  column-gap: 17px;
+  grid-template-columns: 50px 235px;
+  grid-template-rows: 24px 24px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.cart-item a:hover {
+  opacity: 0.6;
+}
+
+.cart-item a:focus {
+  outline-color: #68A2CA;
 }
 
 .hotels-small {
@@ -1336,7 +1378,7 @@ body {
   padding: 0px;
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 20px;
   font-weight: 700;
   font-style: inherit;
   text-align: start;
@@ -1350,7 +1392,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 20px;
   font-weight: 400;
   font-style: inherit;
   text-align: start;
@@ -1364,9 +1406,18 @@ body {
   padding: 0px;
   background-color: transparent;
   border: none;
-  opacity: 50%;
+  opacity: 0.5;
   vertical-align: middle;
   align-self:center;
+}
+
+.cart-item button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.cart-item button:focus {
+  outline-color: #68A2CA;
 }
 
 .all-select {
@@ -1382,6 +1433,16 @@ body {
   border: none;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.all-select:hover {
+  background-color: #615048;
+  cursor: pointer;
+}
+
+.all-select:focus {
+  outline-color: #68A2CA;
+  background-color: #615048;
 }
 
 .modal-container {
